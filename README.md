@@ -1,4 +1,4 @@
-# Introduction
+# MCG
 
-We are on the verge of releasing the code in the upcoming days, so please stay tuned for updates!
+Multi-granularity Contrastive Cross-modal Collaborative Generation for End-to-End Long-term Video Question Answering, under review. 
 
