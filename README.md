@@ -6,7 +6,7 @@ This repository holds the codes for the paper
 
 
 
-![](../../../Library/Application Support/typora-user-images/image-20231202204302404.png)
+![](./assets/image-20231202204302404.png)
 
 
 
