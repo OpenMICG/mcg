@@ -9,7 +9,7 @@ Implementation of the MCG model
 We present the official PyTorch code for MCG, with the complete code directory structured as follows:
 
 ```bash
-.
+./
 ├── config/	# Configuration files
 │   ├── pretrain_mcg.json
 │   ├── msvd_qa.json
@@ -69,6 +69,38 @@ We present the official PyTorch code for MCG, with the complete code directory s
   - Download [TGIF](https://github.com/raingo/TGIF-Release).
   - Put TGIF dataset under your data path.
   - Change your `config/pretrain_mcg.json`
+
+All the text annotation can be downloaded from this [Link](), the complete annotions directory structured as follows:
+
+```bash
+./
+├── fintune_data
+│   ├── msrvttqa
+│   │   ├── test.jsonl
+│   │   ├── train_ans2label.json
+│   │   ├── train.jsonl
+│   │   └── val.jsonl
+│   ├── msvdqa
+│   │   ├── test.jsonl
+│   │   ├── train_ans2label.json
+│   │   ├── train.jsonl
+│   │   └── val.jsonl
+│   └── nextqa
+│       ├── add_reference_answer_test.json
+│       ├── glove_embed.npy
+│       ├── map_vid_vidorID.json
+│       ├── multi_vocab.pkl
+│       ├── test.csv
+│       ├── train.csv
+│       ├── val.csv
+│       └── vocab.pkl
+└── pretrin_data
+    ├── cc3m
+    │   └── cc3m.json
+    └── webvid2m
+        ├── train.pkl
+        └── val.pkl
+```
 
 ### Fine-tuning Data Preparation
 
@@ -224,5 +256,5 @@ Once you have completed the model pre-training, you can use the downstream datas
 
 ## Acknowledgement
 
-The implementation of MCG relies on [ALPRO](https://github.com/salesforce/ALPRO), [TimesFormer](https://github.com/facebookresearch/TimeSformer/tree/main/timesformer/models), [Transfirmer](https://github.com/huggingface/transformers). We use [PyTorch](https://github.com/pytorch/pytorch) as our deep learning framework, with [Horovod](https://github.com/horovod/horovod) and [gradient-checkpoint](https://github.com/csrhddlam/pytorch-checkpoint) as our distributed multi-GPU training frameworks. We thank the original authors for their work and open source code.
+The implementation of MCG relies on [ALPRO](https://github.com/salesforce/ALPRO),  [ClipBERT](https://github.com/jayleicn/ClipBERT), [TimesFormer](https://github.com/facebookresearch/TimeSformer/tree/main/timesformer/models), [Transformer](https://github.com/huggingface/transformers). We use [PyTorch](https://github.com/pytorch/pytorch) as our deep learning framework, with [Horovod](https://github.com/horovod/horovod) and [gradient-checkpoint](https://github.com/csrhddlam/pytorch-checkpoint) as our distributed multi-GPU training frameworks. We thank the original authors for their work and open source code.
 
