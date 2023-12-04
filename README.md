@@ -148,7 +148,7 @@ All the text annotation can be downloaded from this [Link](https://drive.google.
 │       ├── train.csv
 │       ├── val.csv
 │       └── vocab.pkl
-└── pretrin_data
+└── pretrain_data
     ├── cc3m
     │   └── cc3m.json
     └── webvid2m
