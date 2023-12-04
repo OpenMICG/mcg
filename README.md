@@ -70,38 +70,6 @@ We present the official PyTorch code for MCG, with the complete code directory s
   - Put TGIF dataset under your data path.
   - Change your `config/pretrain_mcg.json`
 
-All the text annotation can be downloaded from this [Link](), the complete annotions directory structured as follows:
-
-```bash
-./
-├── fintune_data
-│   ├── msrvttqa
-│   │   ├── test.jsonl
-│   │   ├── train_ans2label.json
-│   │   ├── train.jsonl
-│   │   └── val.jsonl
-│   ├── msvdqa
-│   │   ├── test.jsonl
-│   │   ├── train_ans2label.json
-│   │   ├── train.jsonl
-│   │   └── val.jsonl
-│   └── nextqa
-│       ├── add_reference_answer_test.json
-│       ├── glove_embed.npy
-│       ├── map_vid_vidorID.json
-│       ├── multi_vocab.pkl
-│       ├── test.csv
-│       ├── train.csv
-│       ├── val.csv
-│       └── vocab.pkl
-└── pretrin_data
-    ├── cc3m
-    │   └── cc3m.json
-    └── webvid2m
-        ├── train.pkl
-        └── val.pkl
-```
-
 ### Fine-tuning Data Preparation
 
 - **MSRVTT-QA**
@@ -155,6 +123,38 @@ All the text annotation can be downloaded from this [Link](), the complete annot
     - `['nextqa.zip']` contains annotations of QAs and GloVe Embeddings. 
     - As NExT-QA's videos are sourced from VidOR,  you may need the map file `['nextqa/map_vid_vidorID.json']`).
 
+
+All the text annotation can be downloaded from this [Link](), with the complete annotions directory structured as follows:
+
+```bash
+./
+├── fintune_data
+│   ├── msrvttqa
+│   │   ├── test.jsonl
+│   │   ├── train_ans2label.json
+│   │   ├── train.jsonl
+│   │   └── val.jsonl
+│   ├── msvdqa
+│   │   ├── test.jsonl
+│   │   ├── train_ans2label.json
+│   │   ├── train.jsonl
+│   │   └── val.jsonl
+│   └── nextqa
+│       ├── add_reference_answer_test.json
+│       ├── glove_embed.npy
+│       ├── map_vid_vidorID.json
+│       ├── multi_vocab.pkl
+│       ├── test.csv
+│       ├── train.csv
+│       ├── val.csv
+│       └── vocab.pkl
+└── pretrin_data
+    ├── cc3m
+    │   └── cc3m.json
+    └── webvid2m
+        ├── train.pkl
+        └── val.pkl
+```
 
 ## Pretraining
 
