@@ -185,7 +185,7 @@ All the text annotation can be downloaded from this [Link](https://drive.google.
 
 ## Downstream Task Finetuning
 
-Once you have completed the model pre-training, you can use the downstream datasets to fine-tune your weights . 
+Once you have completed the model pre-training, you can use the downstream datasets to fine-tune your weights. 
 
 
 
