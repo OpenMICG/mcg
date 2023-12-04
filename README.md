@@ -1,14 +1,8 @@
 # MCG
 
-This repository holds the codes for the paper
+Implementation of the MCG model
 
 **Multi-granularity Contrastive Cross-modal Collaborative Generation for End-to-End Long-term Video Question Answering**
-
-
-
-![](./assets/image-20231202204302404.png)
-
-
 
 ## Code structure
 
@@ -227,19 +221,6 @@ Once you have completed the model pre-training, you can use the downstream datas
 
   - `OUTPUT_DIR` is the path after the `--output_dir` option in the finetuning script.
   - `$STEP` is a string, which tells the script to use the checkpoint `$OUTPUT_DIR/ckpt/model_step_$STEP.pt` for inference.
-
-## Citation
-
-```bibtex
-  @xxx{xxxx,
-    title={Multi-granularity Contrastive Cross-modal Collaborative Generation for End-to-End Long-term Video Question Answering},
-    author={Ting Yu, Kunhao Fu, Jian Zhang, Qingming Huang, Jun Yu},
-    booktitle={Transactions on Image Processing},
-    year={2023}
-  }
-```
-
-
 
 ## Acknowledgement
 
