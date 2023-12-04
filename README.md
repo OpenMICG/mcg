@@ -224,4 +224,5 @@ Once you have completed the model pre-training, you can use the downstream datas
 
 ## Acknowledgement
 
-The implementation of MCG relies on [ALPRO](https://github.com/salesforce/ALPRO), [TimesFormer](https://github.com/facebookresearch/TimeSformer/tree/main/timesformer/models), [Transfirmer](https://github.com/huggingface/transformers). We use [PyTorch](https://github.com/pytorch/pytorch) as our deep learning framework, with [Horovod](https://github.com/horovod/horovod) and [gradient-checkpoint](https://github.com/csrhddlam/pytorch-checkpoint) as our distributed multi-GPU training frameworks. We thank the original authors for their work and open source code, and accept ALPRO's suggestions and quote their work here. 
+The implementation of MCG relies on [ALPRO](https://github.com/salesforce/ALPRO), [TimesFormer](https://github.com/facebookresearch/TimeSformer/tree/main/timesformer/models), [Transfirmer](https://github.com/huggingface/transformers). We use [PyTorch](https://github.com/pytorch/pytorch) as our deep learning framework, with [Horovod](https://github.com/horovod/horovod) and [gradient-checkpoint](https://github.com/csrhddlam/pytorch-checkpoint) as our distributed multi-GPU training frameworks. We thank the original authors for their work and open source code.
+
