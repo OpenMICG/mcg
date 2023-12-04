@@ -124,7 +124,7 @@ We present the official PyTorch code for MCG, with the complete code directory s
     - As NExT-QA's videos are sourced from VidOR,  you may need the map file `['nextqa/map_vid_vidorID.json']`).
 
 
-All the text annotation can be downloaded from this [Link](), with the complete annotions directory structured as follows:
+All the text annotation can be downloaded from this [Link](https://drive.google.com/file/d/1uSlZqe6Zf0YFKHHnkx_KG2RfhMGcm0b0/view?usp=sharing), with the complete annotions directory structured as follows:
 
 ```bash
 ./
