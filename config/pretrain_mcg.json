@@ -1,0 +1,61 @@
+{
+  "train_datasets": [
+    {
+      "name": "webvid2m",
+      "ann": "/path/to/your/data/WebVid2M/train.pkl",
+      "txt": null,
+      "img": "/path/to/your/data/WebVid2M/data/videos"
+    },
+    {
+      "name": "cc3m",
+      "ann": "/path/to/your/data/mcg_data/pretrain_data/cc3m/cc3m_update.json",
+      "txt": null,
+      "img": null
+    }
+  ],
+  "val_datasets": [
+    {
+      "name": "webvid2m",
+      "ann": "/path/to/your/data/WebVid2M/val.pkl",
+      "txt": null,
+      "img": "/path/to/your/data/WebVid2M/val_data/videos"
+    }
+  ],
+  "img_pixel_mean": [0.48145466, 0.4578275, 0.40821073],
+  "img_pixel_std": [0.26862954, 0.26130258, 0.27577711],
+  "img_input_format": "RGB",
+  "model_type": "pretrain",
+  "model_config": "config/base_model.json",
+  "visual_model_cfg": "config/timesformer_divst_8x32_224_k600.json",
+  "visual_weights_path": "vit_base_patch16_224",
+  "tokenizer_dir": "/path/to/your/data/mcg/ext/bert-base-uncased",
+  "max_txt_len": 30,
+  "crop_img_size": 224,
+  "resize_size": 256,
+  "train_batch_size": 2,
+  "val_batch_size": 2,
+  "gradient_accumulation_steps": 1,
+  "num_train_epochs": 10,
+  "min_valid_steps": 10,
+  "num_valid": 10,
+  "learning_rate": 1e-4,
+  "decay": "linear",
+  "optim": "adamw",
+  "betas": [0.9, 0.98],
+  "dropout": 0.1,
+  "weight_decay": 1e-3,
+  "grad_norm": 20.0,
+  "seed":42,
+  "fp16": 0,
+  "use_mlm": 1,
+  "use_itc": 1,
+  "use_mcl": 1,
+  "n_workers": 4,
+  "save_steps_ratio": 0.01,
+  "frm_sampling_strategy": "headtail",
+  "num_frm": 4,
+  "fps": 0.5,
+  "debug": false,
+  "warmup_ratio": 0.05,
+  "log_interval": 100
+}
