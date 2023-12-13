@@ -65,10 +65,6 @@ We present the official PyTorch code for MCG, with the complete code directory s
   - Download [CC-3M](https://github.com/igorbrigadir/DownloadConceptualCaptions).
   - Change `cc3m.json` with local image paths.
   - Change your `config/pretrain_mcg.json`
-- **TGIF**
-  - Download [TGIF](https://github.com/raingo/TGIF-Release).
-  - Put TGIF dataset under your data path.
-  - Change your `config/pretrain_mcg.json`
 
 ### Fine-tuning Data Preparation
 
@@ -158,7 +154,7 @@ All the text annotation can be downloaded from this [Link](https://drive.google.
 
 ## Pretraining
 
-1. Download [WebVid2M](https://github.com/m-bain/frozen-in-time),  [CC-3M](https://github.com/igorbrigadir/DownloadConceptualCaptions) and [TGIF](https://github.com/raingo/TGIF-Release).
+1. Download [WebVid2M](https://github.com/m-bain/frozen-in-time) and [CC-3M](https://github.com/igorbrigadir/DownloadConceptualCaptions).
 
 2. Configure your pretraining configuration file  `config/pretrain_mcg.json` with your dataset path and other hyper-parametes.
 
